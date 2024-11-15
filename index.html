@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kişisel Web Sitem</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h2><a href="#"> Kevser Sevim</a></h2>
+            </div>
+            <ul class="nav_links">
+                <li><a href="#anasayfa">Ana Sayfa</a></li>
+                <li><a href="#hakkımda">Hakkımda</a></li>
+                <li><a href="#projelerim">Projelerim</a></li>
+            </ul>
+
+        </div>
+         
+    </header> 
+
+    <!-- ANASAYFA -->
+    <!-- ANASAYFA -->
+<section id="anasayfa">
+    <h2 style="color: bisque;">Saat ve Tarih</h2>
+    <div id="saatTarih"></div>
+
+    <script src="js/script.js"></script>
+
+    <div class="section_title">
+        <h2>ANA SAYFA</h2>
+    </div>
+    <div class="inner_anasayfa">
+        <div class="child_anasayfa">
+            <h1> HOŞ GELDİNİZ! BENİM HAKKIMDA DAHA ÇOK ŞEY ÖĞRENECEĞİNİZ İLHAM DOLU BİR YOLCULUĞA HAZIR OLUN! <br>
+                <span class="span_child">KEYİFLİ BİR GEZİNME DİLİYORUM!</span>
+            </h1>
+            <br>
+            <p>Bu web sitesi, kendimi tanıttığım, projelerimi sergilediğim ve pazara geçebilecek bir portföy olarak tasarlandı. İlham veren projelerle dolu bir keşfe hepiniz davetlisiniz!</p>
+            <br>
+           
+        </div>
+        <div class="fotograf">
+            <img src="img/1.jpg" alt="">
+        </div>
+    </div>
+
+    <div id="contactFormContainer">
+        <h2 style="color:brown;">İletişim Formu</h2>
+        <form id="contactForm" onsubmit="return validateForm()">
+            <label for="name">İsim:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">E-posta:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="subject">Konu:</label>
+            <input type="text" id="subject" name="subject" required>
+            
+            <label for="message">Mesaj:</label>
+            <textarea id="message" name="message" required></textarea> 
+            
+            <button type="submit">Gönder</button>
+            
+        </form>
+        <p id="error" style="color:red;"></p>
+    </div>
+    
+</section>
+
+    <!-- HAKKIMDA -->
+<section id="hakkımda">
+    <div class="section_title">
+        <h2>HAKKIMDA</h2>
+    </div>
+
+    <div class="inner_hakkımda">
+        <div class="fotograf_2">
+            <img src="img/2.jpg" alt="Kevser Sevim">
+        </div>
+        <div class="hakkımda-bilgi">
+            <div style="border: 3px solid purple; padding:10px; width: fit-content; margin-bottom: 20px;">
+                <h1 style="background-color:purple;"> &#9733; MERHABA BEN KEVSER SEVİM  &#9733;</h1>
+            </div>
+            <div style="border: 5px dashed olivedrab; padding:10px; width: fit-content; margin-top: 15px;">
+                <p>
+                    Recep Tayyip Erdoğan Üniversitesi'nde 4. sınıf Bilgisayar Mühendisliği öğrencisiyim. Web programlama, yapay zeka ve ağ güvenliği gibi alanlarda derin bir ilgiye sahibim ve bu alanlarda gelişmek için çaba harcıyorum.Boş zamanlarımda hobi olarak kitap okumayı , film izlemeyi ve köpeğimle yürüyüş yapmayı severim.
+                    <span id="noktalar">...</span>
+                    <span id="daha_fazla" style="display: none;">
+                       Ayrıca teknoloji dünyasında sürekli yenilenen dinamiklerini takip ederek, yaratıcı projeler üretmeyi ve öğrendiklerimi gerçek dünyada uygulamayı hedefliyorum. Bu sitede, üzerinde çalıştığım projeleri, edindiğim tecrübeleri ve ilgi alanlarıyla ilgili güncel bilgileri sizlerle paylaşmayı amaçlıyorum.
+                    </span>
+                    <button onclick="myFunction()" id="myBtn">Daha Fazla</button>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="js/script.js"></script>
+
+
+<!-- PROJELERİM -->
+<section id="projelerim">
+    <div class="section_title">
+        <h2>PROJELERİM</h2>
+        <button onclick="filterProjects('recent')"  id="myBtn">En Son Projeler</button>
+    </div>
+    <div class="innerprojelerim">
+        <!-- İlk proje -->
+        <div class="innerprojelerim_child" data-date="2022-09-15" onclick="openModal('Trabzon Tarih ve Basın Tarihi Müzesi', 'img/3.png', 'Bu proje, Trabzon Ortahisar Belediyesi\'ndeki staj sırasında geliştirildim.  HTML, CSS ve Bootstrap hakkında temel bilgileri edindim. Bu deneyim, web sitelerinin düzenlenmesini geliştirmemi ve yeni bilgilerin kazanılmasını sağladı. Görsel, web sitesine ait bir örnektir.')">
+
+            <h2>Trabzon Tarih ve Basın Tarihi Müzesi</h2>
+            <div class="projeler_img">
+                <img src="img/3.png" alt="proje 1">
+            </div>
+            <div class="detail">
+                <p>Trabzon Ortahisar Belediyesi'ndeki stajımda, kurumda yapılmamış olan web sitelerinin tahsisi verildi. Bu süreçte,  WordPress aracılığı ile  web sitelerini tamamladım. </p>
+            </div>
+        </div>
+        
+        <!-- İkinci proje -->
+        <div class="innerprojelerim_child" data-date="2023-04-25" onclick="openModal('Tatlı Durağı Web Sitesi', 'img/4.png', 'Web Programlama dersinde yapılan bir projedir.Bu projeyi yaparken büyük keyif aldım ve HTML, CSS, Bootstrap, GitHub Sayfaları gibi birçok yeni bilgi kazandım. Ayrıca web geliştirme çözümleri konusunda pratik yapma fırsatım oldu ve bu proje sayesinde benim için bu alanda daha da geliştirildim.')">
+            
+            <h2>Tatlı Durağı Web Sitesi</h2> 
+            
+            <div class="projeler_img">
+                <img src="img/4.png" alt="proje 2">
+            </div>
+            <div class="detail">
+                <p>Web Programlama dersinde Mehmet Sevri Hocam'ın vermiş olduğu ödevde hazırladığım web sitesine ait bir görseldir. </p>
+            </div>
+        </div>
+        
+        <!-- Üçüncü proje -->
+        <div class="innerprojelerim_child" data-date="2024-07-24" onclick="openModal('Trabzon Gezilecek Yerler Müzesi', 'img/5.png', 'Bu proje, Trabzon Ortahisar Belediyesi\'ndeki staj sırasında geliştirdiğim bir web sitesi tasarımı ve yayınıdır. Bu süreçte Trabzon\'un tarihi, mimari yapıları, kültürel etkinlikleri ve doğal güzellikleri hakkında detaylı bilgileri araştırıp siteye ekledim. Web yazılımı, içerik geliştirme, kullanıcı dostu tasarım ve SEO özellikleri gibi yönlerde yeni yetenekler kazandım. Görsel, hazırladığım web sitesine ait bir örnek göstermektedir.')">
+            <h2>Trabzon Turistik Yerler Web Sitesi</h2>
+            <div class="projeler_img">
+                <img src="img/5.png" alt="proje 3">
+            </div>
+            <div class="detail">
+                <p>Trabzon Büyükşehir Belediyesi'ndeki stajım son günlerinde, öğrendiklerimi pekiştirmek amacıyla Trabzon'un tarihi ve kültürel zenginliklerini tanıtan bir web sitesi tasarladım ve yayınladım. </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Modal (Lightbox) -->
+<div id="lightboxModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modalImage" class="modal-content">
+    <div id="modalCaption" class="caption"></div>
+</div>
+
+</body>
+</html>
